@@ -1,0 +1,305 @@
+{
+    "topic_types": [
+        {
+            "value": "Code Name",
+            "uri": "org.purl.classifications.code_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Code Definition",
+            "uri": "org.purl.classifications.code_descr",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Code ID",
+            "uri": "org.purl.classifications.code_id",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Classification Code",
+            "uri": "org.purl.classifications.code",
+            "dataTypeUri": "dmx.core.identity",
+            "compDefs": [
+                {
+                    "childTypeUri": "org.purl.classifications.code_id",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "isIdentityAttr": true,
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.code_name",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.code_descr",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def"
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#4BC3C3",
+                        "dmx.webclient.add_to_create_menu": true,
+                        "dmx.webclient.icon": "\uf02a"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Classification System Description",
+            "uri": "org.purl.classifications.system_descr",
+            "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Classification System Name",
+            "uri": "org.purl.classifications.system_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Classification System ID",
+            "uri": "org.purl.classifications.system_id",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Classification System",
+            "uri": "org.purl.classifications.system",
+            "dataTypeUri": "dmx.core.identity",
+            "compDefs": [
+                {
+                    "childTypeUri": "org.purl.classifications.system_name",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.system_descr",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def"
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.system_id",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "includeInLabel": true
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#C3554B",
+                        "dmx.webclient.color#dmx.webclient.background_color": "#FDEEED",
+                        "dmx.webclient.add_to_create_menu": true,
+                        "dmx.webclient.icon": "\uf084"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Category Name",
+            "uri": "org.purl.classifications.category_name",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Category ID",
+            "uri": "org.purl.classifications.category_id",
+            "dataTypeUri": "dmx.core.text",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Category Description",
+            "uri": "org.purl.classifications.category_descr",
+            "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                         "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Code Category",
+            "uri": "org.purl.classifications.category",
+            "dataTypeUri": "dmx.core.identity",
+            "compDefs": [
+                {
+                    "childTypeUri": "org.purl.classifications.category_name",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "includeInLabel": true
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.category_descr",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def"
+                },
+                {
+                    "childTypeUri": "org.purl.classifications.category_id",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def",
+                    "includeInLabel": true
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#DBA333",
+                        "dmx.webclient.color#dmx.webclient.background_color": "#FDF8ED",
+                        "dmx.webclient.add_to_create_menu": true,
+                        "dmx.webclient.icon": "\uf0ae"
+                    }
+                }
+            ]
+        }
+    ],
+    "assoc_types": [
+        {
+            "value": "Author",
+            "uri": "org.purl.dc.author",
+            "dataTypeUri": "dmx.core.composite",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#f3ca69"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Equivalence",
+            "uri": "org.purl.classifications.equivalence",
+            "dataTypeUri": "dmx.core.composite",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#6F57B7"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Contains",
+            "uri": "org.purl.classifications.contains",
+            "dataTypeUri": "dmx.core.composite",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#DBA333"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Defines",
+            "uri": "org.purl.classifications.defines",
+            "dataTypeUri": "dmx.core.composite",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#C3554B"
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Weighting in Category",
+            "uri": "org.purl.classifications.weight_in_category",
+            "dataTypeUri": "dmx.core.number"
+        },
+        {
+            "value": "Categorizes",
+            "uri": "org.purl.classifications.categorizes",
+            "dataTypeUri": "dmx.core.composite",
+            "compDefs": [
+                {
+                    "childTypeUri": "org.purl.classifications.weight_in_category",
+                    "childCardinalityUri": "dmx.core.one",
+                    "assocTypeUri": "dmx.core.composition_def"
+                }
+            ],
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.color": "#B7CF3F"
+                    }
+                }
+            ]
+        }
+    ]
+}
