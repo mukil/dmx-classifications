@@ -6,14 +6,14 @@
 
     <name>International Classification Systems</name>
     <groupId>info.promut</groupId>
-    <artifactId>dmx-classifications</artifactId>
+    <artifactId>classification-systems</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <parent>
         <groupId>systems.dmx</groupId>
         <artifactId>dmx-plugin</artifactId>
-        <version>5.0-beta-5</version>
+        <version>5.0-beta-6-SNAPSHOT</version>
     </parent>
 
     <!--properties>
@@ -24,17 +24,17 @@
         <dependency>
             <groupId>systems.dmx</groupId>
             <artifactId>dmx-core</artifactId>
-            <version>5.0-beta-5</version>
+            <version>5.0-beta-6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>systems.dmx</groupId>
             <artifactId>dmx-workspaces</artifactId>
-            <version>5.0-beta-5</version>
+            <version>5.0-beta-6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>systems.dmx</groupId>
             <artifactId>dmx-accesscontrol</artifactId>
-            <version>5.0-beta-5</version>
+            <version>5.0-beta-6-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -57,7 +57,7 @@
                             info.promut.classification-systems
                         </Bundle-SymbolicName>
                         <Bundle-Activator>
-                            info.promut.classifications.ClassificationsPlugin
+                            info.promut.classifications.ClassificationSystems
                         </Bundle-Activator>
                     </instructions>
                 </configuration>
