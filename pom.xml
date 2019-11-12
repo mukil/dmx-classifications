@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>DMX Classifications</name>
+    <name>International Classification Systems</name>
     <groupId>info.promut</groupId>
     <artifactId>dmx-classifications</artifactId>
     <version>1.0-SNAPSHOT</version>
