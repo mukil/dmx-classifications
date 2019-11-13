@@ -7,7 +7,7 @@ import systems.dmx.core.osgi.PluginActivator;
 
 @Path("/classification-systems")
 @Consumes("application/json")
-public class ClassificationsPlugin extends PluginActivator  {
+public class ClassificationSystems extends PluginActivator  {
 
     private Logger log = Logger.getLogger(getClass().getName());
     
