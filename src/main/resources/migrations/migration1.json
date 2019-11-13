@@ -47,21 +47,18 @@
                 {
                     "childTypeUri": "org.purl.classifications.class_id",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 },
                 {
                     "childTypeUri": "org.purl.classifications.class_name",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 },
                 {
                     "childTypeUri": "org.purl.classifications.class_descr",
-                    "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def"
+                    "childCardinalityUri": "dmx.core.one"
                 }
             ],
             "viewConfigTopics": [
@@ -79,6 +76,19 @@
             "value": "Description in Category",
             "uri": "org.purl.classifications.descr_in_category",
             "dataTypeUri": "dmx.core.html",
+            "viewConfigTopics": [
+                {
+                    "typeUri": "dmx.webclient.view_config",
+                    "children": {
+                        "dmx.webclient.add_to_create_menu": false
+                    }
+                }
+            ]
+        },
+        {
+            "value": "Weight in Category",
+            "uri": "org.purl.classifications.weight_in_category",
+            "dataTypeUri": "dmx.core.number",
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
@@ -135,19 +145,16 @@
                 {
                     "childTypeUri": "org.purl.classifications.system_name",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 },
                 {
                     "childTypeUri": "org.purl.classifications.system_descr",
-                    "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def"
+                    "childCardinalityUri": "dmx.core.one"
                 },
                 {
                     "childTypeUri": "org.purl.classifications.system_id",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 }
@@ -211,19 +218,16 @@
                 {
                     "childTypeUri": "org.purl.classifications.category_name",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 },
                 {
                     "childTypeUri": "org.purl.classifications.category_descr",
-                    "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def"
+                    "childCardinalityUri": "dmx.core.one"
                 },
                 {
                     "childTypeUri": "org.purl.classifications.category_id",
                     "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def",
                     "isIdentityAttr": true,
                     "includeInLabel": true
                 }
@@ -245,7 +249,7 @@
         {
             "value": "Author",
             "uri": "org.purl.dc.author",
-            "dataTypeUri": "dmx.core.composite",
+            "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
@@ -258,7 +262,7 @@
         {
             "value": "Equivalence",
             "uri": "org.purl.classifications.equivalence",
-            "dataTypeUri": "dmx.core.composite",
+            "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
@@ -271,7 +275,7 @@
         {
             "value": "Contains",
             "uri": "org.purl.classifications.contains",
-            "dataTypeUri": "dmx.core.composite",
+            "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
@@ -284,7 +288,7 @@
         {
             "value": "Defines",
             "uri": "org.purl.classifications.defines",
-            "dataTypeUri": "dmx.core.composite",
+            "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
                 {
                     "typeUri": "dmx.webclient.view_config",
@@ -295,24 +299,17 @@
             ]
         },
         {
-            "value": "Weighting in Category",
-            "uri": "org.purl.classifications.weight_in_category",
-            "dataTypeUri": "dmx.core.number"
-        },
-        {
             "value": "Categorizes",
             "uri": "org.purl.classifications.categorizes",
             "dataTypeUri": "dmx.core.composite",
             "compDefs": [
                 {
                     "childTypeUri": "org.purl.classifications.weight_in_category",
-                    "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def"
+                    "childCardinalityUri": "dmx.core.one"
                 },
                 {
                     "childTypeUri": "org.purl.classifications.descr_in_category",
-                    "childCardinalityUri": "dmx.core.one",
-                    "assocTypeUri": "dmx.core.composition_def"
+                    "childCardinalityUri": "dmx.core.one"
                 }
             ],
             "viewConfigTopics": [
