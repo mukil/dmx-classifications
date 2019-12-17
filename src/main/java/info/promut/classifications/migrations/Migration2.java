@@ -31,7 +31,7 @@ public class Migration2 extends Migration {
         }
         // 1) Assoc Top Level Topic Types
         TopicType classification = dmx.getTopicType("org.purl.classifications.classification");
-        TopicType classificationSystem = dmx.getTopicType("org.purl.classifications.classification_system");
+        TopicType classificationSystem = dmx.getTopicType("org.purl.classifications.system");
         TopicType category = dmx.getTopicType("org.purl.classifications.category");
         workspaces.assignToWorkspace(classification, csWorkspace.getId());
         workspaces.assignToWorkspace(classificationSystem, csWorkspace.getId());
