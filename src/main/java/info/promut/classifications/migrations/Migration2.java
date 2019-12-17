@@ -1,4 +1,4 @@
-package org.deepamehta.plugins.signup.migrations;
+package info.promut.classifications.migrations;
 
 import systems.dmx.core.Topic;
 import systems.dmx.core.service.Inject;
