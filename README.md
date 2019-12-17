@@ -6,6 +6,15 @@ A repository for research with/on international statistic classification systems
 
 Issues are tracked on this repositories public mirror at [github.com](https://github.com/mukil/dmx-classifications) for world wide read/write access.
 
+## Release History
+
+**1.0.0**, Dec 17, 2019
+
+* Introduces Application Model:<br/>
+  Topic Types: _Classification_, _Classification System_, _Category_<br/>
+  Assoc Types: _Equivalence_, _Similar_, _Defines_, _Contains_, _Categorizes_<br/>
+* Compatible with DMX 5.0-beta-6
+
 ## Author
 
 Copyright (C) Malte Reißig, 2019
