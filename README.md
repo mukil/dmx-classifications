@@ -8,6 +8,12 @@ Issues are tracked on this repositories public mirror at [github.com](https://gi
 
 ## Release History
 
+**1.0.1**, Upcoming
+
+* Improvements for using this plugin in a multi-user installation
+**  Introduced a confidential "Classification Systems" workspace
+**  Moved all top-level topic types into the new confidential workspace 
+
 **1.0.0**, Dec 17, 2019
 
 * Introduces Application Model:<br/>
