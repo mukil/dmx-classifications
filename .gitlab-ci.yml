@@ -1,6 +1,9 @@
 # 1) Build every commit on every branch and add the COMMIT SHORT SHA as suffix
 maven-build:
   stage: build
+  tags:
+    - IASS
+    - shared
   script:
     - export MAVEN_OPTS='-Xmx128m'
     - mvn clean package
@@ -12,6 +15,9 @@ maven-build:
 # 2) Does a (local) mvn clean install for every tagged commit
 release-build:
   stage: deploy
+  tags:
+    - IASS
+    - shared
   script:
     - mvn clean install
   dependencies:
