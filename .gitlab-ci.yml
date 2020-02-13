@@ -2,7 +2,6 @@
 maven-build:
   stage: build
   tags:
-    - IASS
     - shared
   script:
     - export MAVEN_OPTS='-Xmx128m'
@@ -16,7 +15,6 @@ maven-build:
 release-build:
   stage: deploy
   tags:
-    - IASS
     - shared
   script:
     - mvn clean install
