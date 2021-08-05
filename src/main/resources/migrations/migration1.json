@@ -42,7 +42,7 @@
         {
             "value": "Classification",
             "uri": "org.purl.classifications.classification",
-            "dataTypeUri": "dmx.core.identity",
+            "dataTypeUri": "dmx.core.entity",
             "compDefs": [
                 {
                     "childTypeUri": "org.purl.classifications.class_id",
@@ -140,7 +140,7 @@
         {
             "value": "Classification System",
             "uri": "org.purl.classifications.system",
-            "dataTypeUri": "dmx.core.identity",
+            "dataTypeUri": "dmx.core.entity",
             "compDefs": [
                 {
                     "childTypeUri": "org.purl.classifications.system_name",
@@ -211,9 +211,9 @@
             ]
         },
         {
-            "value": "Category",
+            "value": "Classification Category",
             "uri": "org.purl.classifications.category",
-            "dataTypeUri": "dmx.core.identity",
+            "dataTypeUri": "dmx.core.entity",
             "compDefs": [
                 {
                     "childTypeUri": "org.purl.classifications.category_name",
@@ -247,7 +247,7 @@
     ],
     "assoc_types": [
         {
-            "value": "Equivalence",
+            "value": "Equivalent Classification",
             "uri": "org.purl.classifications.equivalence",
             "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
@@ -260,7 +260,7 @@
             ]
         },
         {
-            "value": "Similar",
+            "value": "Similar Classification",
             "uri": "org.purl.classifications.similar",
             "dataTypeUri": "dmx.core.text",
             "compDefs": [
@@ -279,7 +279,7 @@
             ]
         },
         {
-            "value": "Contains",
+            "value": "Contains Classification",
             "uri": "org.purl.classifications.contains",
             "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
@@ -292,7 +292,7 @@
             ]
         },
         {
-            "value": "Defines",
+            "value": "Defines Classification",
             "uri": "org.purl.classifications.defines",
             "dataTypeUri": "dmx.core.text",
             "viewConfigTopics": [
@@ -305,7 +305,7 @@
             ]
         },
         {
-            "value": "Categorizes",
+            "value": "Categorizes Classification",
             "uri": "org.purl.classifications.categorizes",
             "dataTypeUri": "dmx.core.composite",
             "compDefs": [

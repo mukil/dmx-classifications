@@ -1,5 +1,6 @@
 package info.promut.classifications.migrations;
 
+import static info.promut.classifications.ClassificationSystems.CLASSIFICATION_WS_URI;
 import java.util.List;
 import systems.dmx.core.Topic;
 import systems.dmx.core.service.Inject;
@@ -10,12 +11,13 @@ import java.util.logging.Logger;
 import systems.dmx.core.TopicType;
 import systems.dmx.core.model.SimpleValue;
 import systems.dmx.core.service.accesscontrol.SharingMode;
+import static systems.dmx.workspaces.Constants.WORKSPACE;
+import static systems.dmx.workspaces.Constants.WORKSPACE_NAME;
 
 public class Migration2 extends Migration {
 
     private Logger logger = Logger.getLogger(getClass().getName());
     static final String CLASSIFICATIONS_WS_NAME = "Classification Systems";
-    static final String ADMIN_USERNAME = "admin";
 
     @Inject
     private WorkspacesService workspaces;
@@ -25,18 +27,18 @@ public class Migration2 extends Migration {
     public void run() {
 
         // 0) Check for WS, Make Sure Custom Plugin Workspace Does Exist
-        Topic csWorkspace = dmx.getTopicByValue("dmx.workspaces.name", new SimpleValue(CLASSIFICATIONS_WS_NAME));
+        Topic csWorkspace = dmx.getTopicByValue(WORKSPACE_NAME, new SimpleValue(CLASSIFICATIONS_WS_NAME));
         if (csWorkspace == null) {
             // double check if it really does not exist yet
-            List<Topic> existingWs = dmx.getTopicsByType("dmx.workspaces.workspace");
+            List<Topic> existingWs = dmx.getTopicsByType(WORKSPACE);
             for (Topic topic : existingWs) {
                 if (topic.getSimpleValue().toString().equals(CLASSIFICATIONS_WS_NAME)) {
                     csWorkspace = topic;
                 }
             }
             if (csWorkspace == null) {
-                csWorkspace = workspaces.createWorkspace(CLASSIFICATIONS_WS_NAME, "dmx.classifications.workspace", SharingMode.CONFIDENTIAL);
-                as.setWorkspaceOwner(csWorkspace, ADMIN_USERNAME);
+                csWorkspace = workspaces.createWorkspace(CLASSIFICATIONS_WS_NAME, CLASSIFICATION_WS_URI, SharingMode.CONFIDENTIAL);
+                as.setWorkspaceOwner(csWorkspace, AccessControlService.ADMIN_USERNAME);
             }
         }
         // 1) Assoc Top Level Topic Types
